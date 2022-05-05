@@ -208,6 +208,30 @@
 
 /obj/item/gun/ballistic/automatic/autopipe/update_icon_state()
 	icon_state = "autopipe[magazine ? "-[CEILING(get_ammo(0)/1, 6)*1]" : ""][chambered ? "" : "-e"][suppressed ? "-suppressed" : ""]"
+	
+//Zip SMG									Keywords: .38, 15 round mag, no AP (bullet hose style)
+/obj/item/gun/ballistic/automatic/hobo/zipsmg
+	name = "Zip SMG"
+	desc = "A compact pipe SMG made from a thick branch, scrap metal, and a coat hanger. Highly inaccurate. What could go wrong."
+	icon = 'icons/fallout/objects/guns/ballistic.dmi'
+	lefthand_file = 'icons/fallout/onmob/weapons/guns_lefthand.dmi'
+	righthand_file = 'icons/fallout/onmob/weapons/guns_righthand.dmi'
+	icon_state = "zipsmg"
+	item_state = "zipsmg"
+	w_class = WEIGHT_CLASS_SMALL
+	weapon_weight = WEAPON_LIGHT
+	mag_type = /obj/item/ammo_box/magazine/zipsmg
+	force = 20
+	extra_damage = 25 //a lot less than the .357 magnum, because OP
+	extra_penetration = 0.05 //long barrel
+	burst_size = 4
+	fire_delay = 6
+	burst_shot_delay = 6
+	spread = 15
+	fire_sound = 'sound/weapons/Gunshot.ogg'
+
+/obj/item/gun/ballistic/automatic/hobo/zipsmg/update_icon_state()
+	icon_state = "zipsmg[magazine ? "-[CEILING(get_ammo(0)/1, 6)*1]" : ""][chambered ? "" : "-e"][suppressed ? "-suppressed" : ""]"
 
 
 
