@@ -114,6 +114,9 @@
 /obj/item/gun/ballistic/bow/sturdy
 	name = "sturdy bow"
 	desc = "A firm sturdy wooden bow with leather handles and sinew wrapping, for extra stopping power in the shot speed of the arrows."
+	icon_state = "bow"
+	item_state = "bow"
+	icon_prefix = "bow"
 	force = 15
 	mag_type = /obj/item/ammo_box/magazine/internal/bow/sturdy
 	extra_speed = 300
@@ -144,3 +147,24 @@
 	zoom_amt = 10
 	zoom_out_amt = 13
 	can_scope = FALSE
+
+//Yumi
+/obj/item/gun/ballistic/bow/yumi
+	name = "Yumi"
+	desc = "A large, slow, unwieldy bow. While heavy and slow to fire, an arrow fired from it is likely to be devestating."
+	icon = 'icons/fallout/objects/guns/ballistic.dmi'
+	icon_state = "yumi"
+	item_state = "yumi"
+	icon_prefix = "yumi"
+	w_class = WEIGHT_CLASS_NORMAL
+	slowdown = 2
+	force = 30
+	extra_damage = 20
+	mag_type = /obj/item/ammo_box/magazine/internal/bow/yumi
+	fire_delay = 100
+	zoomable = TRUE
+	zoom_amt = 10
+	zoom_out_amt = 13
+	can_scope = FALSE
+	fire_sound = 'sound/weapons/bowfire.wav'
+	slot_flags = ITEM_SLOT_BACK

@@ -637,3 +637,14 @@
 // BETA // Obsolete
 /obj/item/projectile/beam/laser/pistol/lasertesting //Wattz pistol
 	damage = 25
+
+//plasma cannon
+/obj/item/projectile/f13plasma/plasmasniper
+	name = "plasma bolt"
+	icon_state = "plasma_clot"
+	damage_type = BURN
+	damage = 53
+	flag = "energy"
+	eyeblur = 0
+	is_reflectable = TRUE
+	pixels_per_second = TILES_TO_PIXELS(50)
